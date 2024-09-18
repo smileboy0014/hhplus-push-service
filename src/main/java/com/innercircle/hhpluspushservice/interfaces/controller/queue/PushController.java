@@ -23,8 +23,9 @@ public class PushController {
      * @return ApiResultResponse 토큰 정보와 대기열 정보를 반환한다.
      */
     @PostMapping("/push")
-    public ApiResultResponse<String> checkWaiting(@RequestBody @Valid PushDto.Request request) {
-        log.info("[PUSH] KAKAO push ID is %d".formatted(request.reservationId()));
+    public ApiResultResponse<String> checkWaiting(@RequestBody @Valid PushDto.Request request) throws InterruptedException {
+        Thread.sleep(2000); //2초 일부러 딜레이 줌
+        log.info("[PUSH] KAKAO push userId is %d ".formatted(request.userId()));
         return ApiResultResponse.ok("complete push!!!!");
     }
 }

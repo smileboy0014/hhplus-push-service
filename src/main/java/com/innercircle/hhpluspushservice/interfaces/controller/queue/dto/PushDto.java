@@ -6,7 +6,7 @@ import lombok.Builder;
 public class PushDto {
 
     @Builder(toBuilder = true)
-    public record Request(@NotNull Long reservationId) {
+    public record Request(@NotNull Long userId) {
     }
 
 }
