@@ -16,9 +16,7 @@ spring:
     name: hhplus-push-service
 
 server:
-  servlet:
-    context-path: /api
-  port: 8085
+  port: 8080
 
 logging:
   level:

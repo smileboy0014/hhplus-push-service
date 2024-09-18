@@ -1,7 +1,7 @@
-package com.innercircle.hhpluspushservice.interfaces.controller.queue;
+package com.innercircle.hhpluspushservice.interfaces.controller.push;
 
 import com.innercircle.hhpluspushservice.interfaces.common.dto.ApiResultResponse;
-import com.innercircle.hhpluspushservice.interfaces.controller.queue.dto.PushDto;
+import com.innercircle.hhpluspushservice.interfaces.controller.push.dto.PushDto;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
